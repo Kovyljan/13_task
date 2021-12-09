@@ -64,7 +64,7 @@ namespace _13_task
             base.Print();
             Console.WriteLine(" Этажность здания: {0} ", Floors);
         }
-        //public void Print()
+        //public void new Print()
         //{
         //    Console.WriteLine(" Длина здания: {0} \n Ширина здания: {1} \n Высота здания: {2} \n Этажность здания: {3} \n Находится по адресу: {4}", Length, Width, Height, Floors, Address);
         //}
