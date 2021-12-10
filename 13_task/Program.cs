@@ -37,15 +37,15 @@ namespace _13_task
             Width = w;
             Height = h;
         }
-        public virtual void Print()
-        {
-            Console.WriteLine(" Длина здания: {0} \n Ширина здания: {1} \n Высота здания: {2} \n Находится по адресу: {3}", Length, Width, Height, Address);
-        }
-
-        //public void Print()
+        //public virtual void Print()
         //{
         //    Console.WriteLine(" Длина здания: {0} \n Ширина здания: {1} \n Высота здания: {2} \n Находится по адресу: {3}", Length, Width, Height, Address);
         //}
+
+        public void Print()
+        {
+            Console.WriteLine(" Длина здания: {0} \n Ширина здания: {1} \n Высота здания: {2} \n Находится по адресу: {3}", Length, Width, Height, Address);
+        }
     }
 
     sealed class MultiBuilding : Building
@@ -59,14 +59,15 @@ namespace _13_task
             Floors = h/3000;
         }
 
-        public override void Print()
-        {            
+        //public override void Print()
+        //{            
+        //    base.Print();
+        //    Console.WriteLine(" Этажность здания: {0} ", Floors);
+        //}
+        public void Print()
+        {
             base.Print();
             Console.WriteLine(" Этажность здания: {0} ", Floors);
         }
-        //public void new Print()
-        //{
-        //    Console.WriteLine(" Длина здания: {0} \n Ширина здания: {1} \n Высота здания: {2} \n Этажность здания: {3} \n Находится по адресу: {4}", Length, Width, Height, Floors, Address);
-        //}
     }
 }
